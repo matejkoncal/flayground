@@ -43,17 +43,20 @@ export const LoginModal = ({ onClose, open }: LoginModalProps) => {
           elevation={3}
         >
           <TextField
+            InputLabelProps={{ shrink: true }}
             label="Organization url"
             placeholder="e.g.: https://q.dev.rescocrm.com/"
             onChange={(e) => setUrl(e.target.value)}
             value={url}
           />
           <TextField
+            InputLabelProps={{ shrink: true }}
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             label="Email"
           />
           <TextField
+            InputLabelProps={{ shrink: true }}
             type="password"
             label="Password"
             value={password}
